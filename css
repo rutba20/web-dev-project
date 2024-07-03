@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calendar-container {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.month {
+
+    background-color: rgb(228, 196, 208);
+    border: 1px solid #ddd;
+    border-radius: 20%;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+
+.month-name {
+    border-radius: 40%;
+    background-color: rgb(119, 177, 239);
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.weekday {
+    display: inline-block;
+    width: calc(100% / 7);
+    text-align: center;
+    font-weight: bold;
+}
+
+.day {
+    background-color: beige;
+    border-radius: 50%;
+    display: inline-block;
+    width: calc(100% / 7);
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.event {
+    background-color: #26f35af1;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#event-form {
+    border-radius: 20%;
+    background-color: rgb(232, 195, 211);
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#event-form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#event-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#event-form button:hover {
+    background-color: #0056b3;
+}
